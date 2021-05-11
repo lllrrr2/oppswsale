@@ -14,6 +14,7 @@ config frp 'common'
 	option log_level 'info'
 	option enable_http_proxy '0'
 	option protocol 'tcp'
+	option user ''
 
 config proxy
 	option enable '1'
