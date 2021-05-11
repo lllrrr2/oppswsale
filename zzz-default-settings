@@ -58,7 +58,7 @@ sed -i 's/entry({"admin", "system", "leds"}/-- entry({"admin", "system", "leds"}
 sed -i 's/entry({"admin", "status", "syslog"}/-- entry({"admin", "status", "syslog"}/g' /usr/lib/lua/luci/controller/admin/status.lua
 sed -i 's/entry({"admin", "status", "dmesg"}/-- entry({"admin", "status", "dmesg"}/g' /usr/lib/lua/luci/controller/admin/status.lua
 sed -i 's/entry({"admin", "status", "processes"}/-- entry({"admin", "status", "processes"}/g' /usr/lib/lua/luci/controller/admin/status.lua
-sed -i 's/entry({"admin","services","frp"}/-- entry({"admin","services","frp"}/g' /usr/lib/lua/luci/controller/frp.lua
+sed -i 's/entry({"admin", "services", "frp"}/-- entry({"admin","services","frp"}/g' /usr/lib/lua/luci/controller/frp.lua
 sed -i 's/entry( {"admin", "services", "ddns"}/-- entry( {"admin", "services", "ddns"}/g' /usr/lib/lua/luci/controller/ddns.lua
 rm -f /usr/lib/lua/luci/view/admin_status/index/ddns.htm
 
