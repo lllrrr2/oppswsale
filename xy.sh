@@ -55,6 +55,8 @@ svn co https://github.com/openwrt/packages/trunk/libs/libcap feeds/packages/libs
 rm -rf feeds/packages/net/haproxy/
 svn co https://github.com/openwrt/packages/trunk/net/haproxy feeds/packages/net/haproxy
 svn co https://github.com/openwrt/openwrt/trunk/package/utils/lua5.3 package/utils/lua5.3
+rm -rf package/network/utils/curl/
+svn co https://github.com/openwrt/packages/trunk/net/curl package/network/utils/curl
 #rm -rf feeds/packages/utils/ttyd/
 #svn co https://github.com/openwrt/packages/trunk/utils/ttyd feeds/packages/utils/ttyd
 svn co https://github.com/coolsnowwolf/lede/trunk/tools/ucl tools/ucl
