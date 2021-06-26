@@ -27,7 +27,7 @@ sed -i 's/3a6ef59163f5a1d41b67908269e924000a8ccb2984e4bdfc18bd1405b5dbaf22/9c773
 svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-app-frpc package/lean/luci-app-frpc
 svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-app-frps package/lean/luci-app-frps
 svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-app-mwan3helper package/lean/luci-app-mwan3helper
-git clone https://github.com/fw876/helloworld package/lean/helloworld
+#git clone https://github.com/fw876/helloworld package/lean/helloworld
 svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/srelay package/lean/srelay
 svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/tcpping package/lean/tcpping
 svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/npc package/lean/npc
@@ -62,11 +62,12 @@ svn co https://github.com/openwrt/packages/trunk/net/curl package/network/utils/
 svn co https://github.com/coolsnowwolf/lede/trunk/tools/ucl tools/ucl
 svn co https://github.com/coolsnowwolf/lede/trunk/tools/upx tools/upx
 cp ../Makefile tools/
-git clone https://github.com/jerrykuku/luci-app-vssr package/lean/luci-app-vssr
-git clone https://github.com/jerrykuku/lua-maxminddb package/lean/lua-maxminddb
+#git clone https://github.com/jerrykuku/luci-app-vssr package/lean/luci-app-vssr
+#git clone https://github.com/jerrykuku/lua-maxminddb package/lean/lua-maxminddb
+#git clone https://github.com/garypang13/openwrt-bypass package/lean/openwrt-bypass
 git clone https://github.com/lllrrr/frpmod package/lean/frpmod
 rm -rf feeds/packages/net/kcptun/
-git clone https://github.com/lllrrr/mysmartdns package/mysmartdns
+#git clone https://github.com/lllrrr/mysmartdns package/mysmartdns
 #git clone https://github.com/pymumu/openwrt-smartdns package/lean/openwrt-smartdns
 #git clone -b lede https://github.com/pymumu/luci-app-smartdns package/lean/luci-app-smartdns
 cp ../target.mk include/
