@@ -27,15 +27,7 @@ sed -i 's/3a6ef59163f5a1d41b67908269e924000a8ccb2984e4bdfc18bd1405b5dbaf22/9c773
 svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-app-frpc package/lean/luci-app-frpc
 svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-app-frps package/lean/luci-app-frps
 svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-app-mwan3helper package/lean/luci-app-mwan3helper
-#git clone https://github.com/fw876/helloworld package/lean/helloworld
-rm -rf package/lean/helloworld/naiveproxy
-rm -rf package/lean/helloworld/shadowsocksr-libev
-rm -rf package/lean/helloworld/shadowsocks-rust
-rm -rf package/lean/helloworld/tcping
-rm -rf package/lean/helloworld/v2ray-core
-rm -rf package/lean/helloworld/v2ray-plugin
-rm -rf package/lean/helloworld/xray-core
-rm -rf package/lean/helloworld/xray-plugin
+git clone https://github.com/fw876/helloworld package/lean/helloworld
 svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/srelay package/lean/srelay
 svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/tcpping package/lean/tcpping
 svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/npc package/lean/npc
@@ -45,11 +37,11 @@ svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-app-zerotier
 svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-lib-fs package/lean/luci-lib-fs
 svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/microsocks package/lean/microsocks
 svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/redsocks2 package/lean/redsocks2
-git clone https://github.com/xiaorouji/openwrt-passwall package/openwrt-passwall
+#git clone https://github.com/xiaorouji/openwrt-passwall package/openwrt-passwall
 #rm -rf package/openwrt-passwall/luci-app-passwall
 #rm -rf package/openwrt-passwall/trojan
 #git clone https://github.com/lllrrr/mypsw36m package/mypsw36m
-sed -i 's/PassWall/科学上网/g' package/openwrt-passwall/luci-app-passwall/po/zh-cn/passwall.po
+#sed -i 's/PassWall/科学上网/g' package/openwrt-passwall/luci-app-passwall/po/zh-cn/passwall.po
 git clone https://github.com/Lienol/openwrt-package package/openwrt-package
 svn co https://github.com/lllrrr/mypsw/trunk/theme package/lean/theme
 #svn co https://github.com/lllrrr/myttyd/trunk/luci-app-terminal package/lean/luci-app-terminal
@@ -70,8 +62,8 @@ svn co https://github.com/openwrt/packages/trunk/net/curl package/network/utils/
 svn co https://github.com/coolsnowwolf/lede/trunk/tools/ucl tools/ucl
 svn co https://github.com/coolsnowwolf/lede/trunk/tools/upx tools/upx
 cp ../Makefile tools/
-#git clone https://github.com/jerrykuku/luci-app-vssr package/lean/luci-app-vssr
-#git clone https://github.com/jerrykuku/lua-maxminddb package/lean/lua-maxminddb
+git clone https://github.com/jerrykuku/luci-app-vssr package/lean/luci-app-vssr
+git clone https://github.com/jerrykuku/lua-maxminddb package/lean/lua-maxminddb
 #git clone https://github.com/garypang13/openwrt-bypass package/lean/openwrt-bypass
 git clone https://github.com/lllrrr/frpmod package/lean/frpmod
 rm -rf feeds/packages/net/kcptun/
