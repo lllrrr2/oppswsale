@@ -65,6 +65,7 @@ cp ../Makefile tools/
 #git clone https://github.com/jerrykuku/luci-app-vssr package/lean/luci-app-vssr
 #git clone https://github.com/jerrykuku/lua-maxminddb package/lean/lua-maxminddb
 git clone https://github.com/garypang13/openwrt-bypass package/lean/openwrt-bypass
+sed -i 's/Bypass/科学上网/g' package/lean/openwrt-bypass/luci-app-bypass/luasrc/controller/bypass.lua
 git clone https://github.com/lllrrr/frpmod package/lean/frpmod
 rm -rf feeds/packages/net/kcptun/
 #git clone https://github.com/lllrrr/mysmartdns package/mysmartdns
