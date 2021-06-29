@@ -50,7 +50,7 @@ git clone https://github.com/xiaorouji/openwrt-passwall package/openwrt-passwall
 #rm -rf package/openwrt-passwall/luci-app-passwall
 #rm -rf package/openwrt-passwall/trojan
 #git clone https://github.com/lllrrr/mypsw36m package/mypsw36m
-sed -i 's/PassWall/科学上网/g' package/openwrt-passwall/luci-app-passwall/po/zh-cn/passwall.po
+sed -i 's/PassWall/通行证/g' package/openwrt-passwall/luci-app-passwall/po/zh-cn/passwall.po
 git clone https://github.com/Lienol/openwrt-package package/openwrt-package
 svn co https://github.com/lllrrr/mypsw/trunk/theme package/lean/theme
 #svn co https://github.com/lllrrr/myttyd/trunk/luci-app-terminal package/lean/luci-app-terminal
@@ -75,7 +75,7 @@ cp ../Makefile tools/
 #git clone https://github.com/jerrykuku/lua-maxminddb package/lean/lua-maxminddb
 #git clone https://github.com/garypang13/openwrt-bypass package/lean/openwrt-bypass
 #git clone https://github.com/lllrrr/myopenwrt-bypass package/lean/openwrt-bypass
-#sed -i 's/Bypass/科学上网/g' package/lean/openwrt-bypass/luci-app-bypass/luasrc/controller/bypass.lua
+#sed -i 's/Bypass/旁路/g' package/lean/openwrt-bypass/luci-app-bypass/luasrc/controller/bypass.lua
 git clone https://github.com/lllrrr/frpmod package/lean/frpmod
 rm -rf feeds/packages/net/kcptun/
 #git clone https://github.com/lllrrr/mysmartdns package/mysmartdns
