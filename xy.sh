@@ -83,6 +83,6 @@ rm -rf feeds/packages/net/kcptun/
 #git clone https://github.com/pymumu/openwrt-smartdns package/lean/openwrt-smartdns
 #git clone -b lede https://github.com/pymumu/luci-app-smartdns package/lean/luci-app-smartdns
 cp ../target.mk include/
-cp ../zzz-default-settings package/lean/default-settings/files/zzz-default-settings
-sed -i "s/R8.3.19.0410/XP9.$(date "+%y.%m%d.%H")/g" package/lean/default-settings/files/zzz-default-settings
+cp ../zzz-default-settings package/sale/default-settings/files/zzz-default-settings
+sed -i "s/R8.3.19.0410/XP9.$(date "+%y.%m%d.%H")/g" package/sale/default-settings/files/zzz-default-settings
 sed -i "s/R8.3.19.0410/XP9.$(date "+%y.%m%d.%H")/g" files/etc/banner
