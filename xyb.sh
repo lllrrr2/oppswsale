@@ -76,7 +76,7 @@ rm -rf feeds/packages/net/kcptun/
 #git clone -b lede https://github.com/pymumu/luci-app-smartdns package/lean/luci-app-smartdns
 cp ../target.mk include/
 cp ../zzz-default-settings package/sale/default-settings/files/zzz-default-settings
-cp ../ninja staging_dir/hostpkg/bin/
-chmod 777 staging_dir/hostpkg/bin/ninja
+#cp ../ninja staging_dir/hostpkg/bin/
+#chmod 777 staging_dir/hostpkg/bin/ninja
 sed -i "s/R8.3.19.0410/XB9.$(date "+%y.%m%d.%H")/g" package/sale/default-settings/files/zzz-default-settings
 sed -i "s/R8.3.19.0410/XB9.$(date "+%y.%m%d.%H")/g" files/etc/banner
