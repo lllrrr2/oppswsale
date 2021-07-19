@@ -48,8 +48,8 @@ svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-app-wrtbwmon
 ##svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/redsocks2 package/lean/redsocks2
 git clone https://github.com/xiaorouji/openwrt-passwall package/openwrt-passwall
 #rm -rf package/openwrt-passwall/luci-app-passwall
-rm -rf package/openwrt-passwall/naiveproxy
-svn co https://github.com/fw876/helloworld/trunk/naiveproxy package/lean/naiveproxy
+#rm -rf package/openwrt-passwall/naiveproxy
+#svn co https://github.com/fw876/helloworld/trunk/naiveproxy package/lean/naiveproxy
 #git clone https://github.com/lllrrr/mypsw36m package/mypsw36m
 sed -i 's/PassWall/通行证/g' package/openwrt-passwall/luci-app-passwall/po/zh-cn/passwall.po
 ##git clone https://github.com/Lienol/openwrt-package package/openwrt-package
