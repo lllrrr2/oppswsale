@@ -68,13 +68,13 @@ cp ../comm/Makefile tools/
 #git clone https://github.com/jerrykuku/lua-maxminddb package/lean/lua-maxminddb
 git clone https://github.com/garypang13/openwrt-bypass package/lean/openwrt-bypass
 #git clone https://github.com/lllrrr/myopenwrt-bypass package/lean/openwrt-bypass
-sed -i 's/Bypass/旁路/g' package/sale/luci-app-bypass/luasrc/controller/bypass.lua
+sed -i 's/Bypass/旁路/g' package/lean/luci-app-bypass/luasrc/controller/bypass.lua
 git clone https://github.com/lllrrr/myfrpmod package/lean/frpmod
 rm -rf feeds/packages/net/kcptun/
 #git clone https://github.com/lllrrr/mysmartdns package/mysmartdns
 #git clone https://github.com/pymumu/openwrt-smartdns package/lean/openwrt-smartdns
 #git clone -b lede https://github.com/pymumu/luci-app-smartdns package/lean/luci-app-smartdns
 cp ../comm/target.mk include/
-cp ../zzz-default-settings package/sale/default-settings/files/zzz-default-settings
-sed -i "s/R8.3.19.0410/XB9.$(date "+%y.%m%d.%H")/g" package/sale/default-settings/files/zzz-default-settings
+cp ../zzz-default-settings package/lean/default-settings/files/zzz-default-settings
+sed -i "s/R8.3.19.0410/XB9.$(date "+%y.%m%d.%H")/g" package/lean/default-settings/files/zzz-default-settings
 sed -i "s/R8.3.19.0410/XB9.$(date "+%y.%m%d.%H")/g" files/etc/banner
