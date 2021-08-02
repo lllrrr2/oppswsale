@@ -73,7 +73,7 @@ git clone https://github.com/lllrrr/myow package/lean/myow
 #sed -i 's/Bypass/旁路/g' package/lean/luci-app-bypass/luasrc/controller/bypass.lua
 git clone https://github.com/lllrrr/myfrpmod package/lean/frpmod
 rm -rf feeds/packages/net/kcptun/
-#git clone https://github.com/lllrrr/mysmartdns package/mysmartdns
+git clone https://github.com/lllrrr/mysmartdns package/mysmartdns
 #git clone https://github.com/pymumu/openwrt-smartdns package/lean/openwrt-smartdns
 #git clone -b lede https://github.com/pymumu/luci-app-smartdns package/lean/luci-app-smartdns
 cp ../comm/target.mk include/
