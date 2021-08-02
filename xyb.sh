@@ -37,7 +37,7 @@ svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-app-wrtbwmon
 #svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-app-zerotier package/lean/luci-app-zerotier
 ##svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-lib-fs package/lean/luci-lib-fs
 ##svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/microsocks package/lean/microsocks
-##svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/redsocks2 package/lean/redsocks2
+svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/redsocks2 package/lean/redsocks2
 git clone https://github.com/xiaorouji/openwrt-passwall package/openwrt-passwall
 #git clone https://github.com/lllrrr/myopenwrt-passwall package/openwrt-passwall
 #rm -rf package/openwrt-passwall/luci-app-passwall
@@ -67,9 +67,10 @@ svn co https://github.com/Lienol/openwrt/branches/19.07/tools/upx tools/upx
 cp ../comm/Makefile tools/
 #git clone https://github.com/jerrykuku/luci-app-vssr package/lean/luci-app-vssr
 #git clone https://github.com/jerrykuku/lua-maxminddb package/lean/lua-maxminddb
-git clone https://github.com/garypang13/openwrt-bypass package/lean/openwrt-bypass
+#git clone https://github.com/garypang13/openwrt-bypass package/lean/openwrt-bypass
 #git clone https://github.com/lllrrr/myopenwrt-bypass package/lean/openwrt-bypass
-sed -i 's/Bypass/旁路/g' package/lean/luci-app-bypass/luasrc/controller/bypass.lua
+git clone https://github.com/lllrrr/myow package/lean/myow
+#sed -i 's/Bypass/旁路/g' package/lean/luci-app-bypass/luasrc/controller/bypass.lua
 git clone https://github.com/lllrrr/myfrpmod package/lean/frpmod
 rm -rf feeds/packages/net/kcptun/
 #git clone https://github.com/lllrrr/mysmartdns package/mysmartdns
