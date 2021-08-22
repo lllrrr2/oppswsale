@@ -106,7 +106,7 @@ jobs:
         sed -i "s/123456789/${{ env.FRP_TOKEN }}/g" openwrt/files/etc/config/frp
 
     - name: Default IP Setting
-      if: env.github.event.inputs.IP !== ''
+      if: env.github.event.inputs.IP != ''
       run: |
         sed -i "s/192.168.123.1/${{ env.github.event.inputs.IP }}/g" openwrt/package/lean/default-settings/files/zzz-default-settings
 
