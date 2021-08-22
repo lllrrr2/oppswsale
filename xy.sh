@@ -71,7 +71,7 @@ svn co https://github.com/openwrt/packages/trunk/net/curl package/network/utils/
 #svn co https://github.com/openwrt/packages/trunk/utils/ttyd feeds/packages/utils/ttyd
 svn co https://github.com/Lienol/openwrt/branches/19.07/tools/ucl tools/ucl
 svn co https://github.com/Lienol/openwrt/branches/19.07/tools/upx tools/upx
-cp ../comm/Makefile tools/
+cp $GITHUB_WORKSPACE/comm/Makefile tools/
 #git clone https://github.com/jerrykuku/luci-app-vssr package/lean/luci-app-vssr
 #git clone https://github.com/jerrykuku/lua-maxminddb package/lean/lua-maxminddb
 #git clone https://github.com/garypang13/openwrt-bypass package/lean/openwrt-bypass
@@ -82,7 +82,7 @@ rm -rf feeds/packages/net/kcptun/
 #git clone https://github.com/lllrrr/mysmartdns package/mysmartdns
 #git clone https://github.com/pymumu/openwrt-smartdns package/lean/openwrt-smartdns
 #git clone -b lede https://github.com/pymumu/luci-app-smartdns package/lean/luci-app-smartdns
-cp ../comm/target.mk include/
-cp ../zzz-default-settings package/lean/default-settings/files/zzz-default-settings
+cp $GITHUB_WORKSPACE/comm/target.mk include/
+cp $GITHUB_WORKSPACE/zzz-default-settings package/lean/default-settings/files/zzz-default-settings
 sed -i "s/R8.3.19.0410/XP9.$(date "+%y.%m%d.%H")/g" package/lean/default-settings/files/zzz-default-settings
 sed -i "s/R8.3.19.0410/XP9.$(date "+%y.%m%d.%H")/g" files/etc/banner

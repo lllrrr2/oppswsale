@@ -11,7 +11,7 @@
 sed -i 's/+IPV6:luci-proto-ipv6 //g' feeds/luci/collections/luci/Makefile
 sed -i 's/16384/65535/g' package/kernel/linux/files/sysctl-nf-conntrack.conf
 sed -i 's/luci-theme-bootstrap/luci-theme-argon-light-mod/g' feeds/luci/collections/luci/Makefile
-sed -i 's/IMG_PREFIX:=$(VERSION_DIST_SANITIZED)/IMG_PREFIX:=XP9-Sale-$(shell date +%F-%H)-$(VERSION_DIST_SANITIZED)/g' include/image.mk
+sed -i 's/IMG_PREFIX:=$(VERSION_DIST_SANITIZED)/IMG_PREFIX:=XPOS9-Sale-$(shell date +%F-%H)-$(VERSION_DIST_SANITIZED)/g' include/image.mk
 
 svn co https://github.com/lllrrr/myok/trunk/default-settings package/lean/default-settings
 #git clone https://github.com/lllrrr/mysale package/sale
@@ -28,7 +28,7 @@ svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/frp package/lean/
 svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-app-frpc package/lean/luci-app-frpc
 #svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-app-frps package/lean/luci-app-frps
 #svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-app-mwan3helper package/lean/luci-app-mwan3helper
-#git clone https://github.com/fw876/helloworld package/lean/helloworld
+svn co https://github.com/fw876/helloworld/trunk/luci-app-ssr-plus package/lean/luci-app-ssr-plus
 rm -rf package/lean/helloworld/naiveproxy
 rm -rf package/lean/helloworld/shadowsocksr-libev
 rm -rf package/lean/helloworld/shadowsocks-rust
@@ -45,13 +45,13 @@ svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-app-wrtbwmon
 #svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-app-zerotier package/lean/luci-app-zerotier
 ##svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-lib-fs package/lean/luci-lib-fs
 ##svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/microsocks package/lean/microsocks
-##svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/redsocks2 package/lean/redsocks2
+svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/redsocks2 package/lean/redsocks2
 git clone https://github.com/xiaorouji/openwrt-passwall package/openwrt-passwall
 #rm -rf package/openwrt-passwall/luci-app-passwall
 #rm -rf package/openwrt-passwall/naiveproxy
 #svn co https://github.com/fw876/helloworld/trunk/naiveproxy package/lean/naiveproxy
 #git clone https://github.com/lllrrr/mypsw36m package/mypsw36m
-sed -i 's/PassWall/通行证/g' package/openwrt-passwall/luci-app-passwall/po/zh-cn/passwall.po
+#sed -i 's/PassWall/通行证/g' package/openwrt-passwall/luci-app-passwall/po/zh-cn/passwall.po
 ##git clone https://github.com/Lienol/openwrt-package package/openwrt-package
 svn co https://github.com/lllrrr/mypsw/trunk/theme package/lean/theme
 #svn co https://github.com/lllrrr/myttyd/trunk/luci-app-terminal package/lean/luci-app-terminal
@@ -76,13 +76,14 @@ cp $GITHUB_WORKSPACE/comm/Makefile tools/
 #git clone https://github.com/jerrykuku/lua-maxminddb package/lean/lua-maxminddb
 #git clone https://github.com/garypang13/openwrt-bypass package/lean/openwrt-bypass
 #git clone https://github.com/lllrrr/myopenwrt-bypass package/lean/openwrt-bypass
+git clone https://github.com/lllrrr/myow package/lean/myow
 #sed -i 's/Bypass/旁路/g' package/lean/openwrt-bypass/luci-app-bypass/luasrc/controller/bypass.lua
 git clone https://github.com/lllrrr/myfrpmod package/lean/frpmod
 rm -rf feeds/packages/net/kcptun/
-#git clone https://github.com/lllrrr/mysmartdns package/mysmartdns
+git clone https://github.com/lllrrr/mysmartdns package/mysmartdns
 #git clone https://github.com/pymumu/openwrt-smartdns package/lean/openwrt-smartdns
 #git clone -b lede https://github.com/pymumu/luci-app-smartdns package/lean/luci-app-smartdns
 cp $GITHUB_WORKSPACE/comm/target.mk include/
 cp $GITHUB_WORKSPACE/zzz-default-settings package/lean/default-settings/files/zzz-default-settings
-sed -i "s/R8.3.19.0410/XP9.$(date "+%y.%m%d.%H")/g" package/lean/default-settings/files/zzz-default-settings
-sed -i "s/R8.3.19.0410/XP9.$(date "+%y.%m%d.%H")/g" files/etc/banner
+sed -i "s/R8.3.19.0410/XPOS9.$(date "+%y.%m%d.%H")/g" package/lean/default-settings/files/zzz-default-settings
+sed -i "s/R8.3.19.0410/XPOS9.$(date "+%y.%m%d.%H")/g" files/etc/banner
