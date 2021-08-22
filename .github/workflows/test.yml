@@ -167,6 +167,6 @@ jobs:
       uses: actions/upload-artifact@main
       if: steps.organize.outputs.status == 'success' && !cancelled()
       with:
-        name: ${{ env.FILE_DATE }}${{ env.DEVICE_NAME }}-19-Sale-Passwall
+        name: ${{ env.FILE_DATE }}${{ env.DEVICE_NAME }}_19_Sale_Passwall
 #        name: ${{ env.FIRMWARE_NAME }}
         path: ./artifact/
