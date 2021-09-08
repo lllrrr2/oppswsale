@@ -60,8 +60,8 @@ svn co https://github.com/lllrrr/mypsw/trunk/theme package/lean/theme
 #git clone https://github.com/tty228/luci-app-serverchan package/lean/luci-app-serverchan
 rm -rf feeds/packages/lang/golang/
 svn co https://github.com/openwrt/packages/trunk/lang/golang feeds/packages/lang/golang
-rm -rf feeds/packages/libs/libcap/
-svn co https://github.com/openwrt/packages/branches/openwrt-19.07/libs/libcap feeds/packages/libs/libcap
+#rm -rf feeds/packages/libs/libcap/
+#svn co https://github.com/openwrt/packages/branches/openwrt-19.07/libs/libcap feeds/packages/libs/libcap
 rm -rf feeds/packages/net/haproxy/
 svn co https://github.com/openwrt/packages/trunk/net/haproxy feeds/packages/net/haproxy
 svn co https://github.com/openwrt/openwrt/trunk/package/utils/lua5.3 package/utils/lua5.3
