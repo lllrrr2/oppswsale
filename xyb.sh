@@ -63,6 +63,7 @@ svn co https://github.com/openwrt/packages/trunk/net/curl package/network/utils/
 #svn co https://github.com/openwrt/packages/trunk/utils/ttyd feeds/packages/utils/ttyd
 svn co https://github.com/Lienol/openwrt/branches/19.07/tools/ucl tools/ucl
 svn co https://github.com/Lienol/openwrt/branches/19.07/tools/upx tools/upx
+svn co https://github.com/Lienol/openwrt/branches/19.07/tools/ninja tools/ninja
 cp $GITHUB_WORKSPACE/comm/Makefile tools/
 #git clone https://github.com/jerrykuku/luci-app-vssr package/lean/luci-app-vssr
 #git clone https://github.com/jerrykuku/lua-maxminddb package/lean/lua-maxminddb

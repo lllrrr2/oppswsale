@@ -62,9 +62,12 @@ sed -i 's/entry({"admin", "services", "frp"}/-- entry({"admin", "services", "frp
 sed -i 's/entry( {"admin", "services", "ddns"}/-- entry( {"admin", "services", "ddns"}/g' /usr/lib/lua/luci/controller/ddns.lua
 rm -f /usr/lib/lua/luci/view/admin_status/index/ddns.htm
 
+/etc/init.d/haproxy disable 2>/dev/null
+/etc/init.d/kcptun disable 2>/dev/null
+
 sed -i 's/downloads.openwrt.org/mirrors.tuna.tsinghua.edu.cn\/openwrt/g' /etc/opkg/distfeeds.conf
 
 rm -rf /etc/config/passwall_show
-rm -rf /tmp/luci-*
+rm -rf /tmp/luci-*cache
 
 exit 0
