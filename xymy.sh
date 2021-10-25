@@ -11,7 +11,7 @@
 sed -i 's/+IPV6:luci-proto-ipv6 //g' feeds/luci/collections/luci/Makefile
 sed -i 's/16384/65535/g' package/kernel/linux/files/sysctl-nf-conntrack.conf
 sed -i 's/luci-theme-bootstrap/luci-theme-argon-light-mod/g' feeds/luci/collections/luci/Makefile
-sed -i 's/IMG_PREFIX:=$(VERSION_DIST_SANITIZED)/IMG_PREFIX:=XP9-Sale-$(shell date +%F-%H)-$(VERSION_DIST_SANITIZED)/g' include/image.mk
+sed -i 's/IMG_PREFIX:=$(VERSION_DIST_SANITIZED)/IMG_PREFIX:=XM9-Sale-$(shell date +%F-%H)-$(VERSION_DIST_SANITIZED)/g' include/image.mk
 
 svn export https://github.com/lllrrr/myok/trunk/default-settings package/lean/default-settings
 #svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/ddns-scripts_aliyun package/lean/ddns-scripts_aliyun
@@ -52,12 +52,12 @@ git clone https://github.com/xiaorouji/openwrt-passwall package/openwrt-passwall
 #svn co https://github.com/fw876/helloworld/trunk/naiveproxy package/lean/naiveproxy
 #git clone https://github.com/lllrrr/mypsw36m package/mypsw36m
 sed -i 's/PassWall/通行证/g' package/openwrt-passwall/luci-app-passwall/po/zh-cn/passwall.po
-##git clone https://github.com/Lienol/openwrt-package package/openwrt-package
+git clone https://github.com/Lienol/openwrt-package package/openwrt-package
 svn export https://github.com/lllrrr/mypsw/trunk/theme package/lean/theme
 #svn co https://github.com/lllrrr/myttyd/trunk/luci-app-terminal package/lean/luci-app-terminal
 #git clone https://github.com/vernesong/OpenClash package/lean/OpenClash
 #git clone https://github.com/destan19/OpenAppFilter package/lean/OpenAppFilter
-#git clone https://github.com/tty228/luci-app-serverchan package/lean/luci-app-serverchan
+git clone https://github.com/tty228/luci-app-serverchan package/lean/luci-app-serverchan
 rm -rf feeds/packages/lang/golang/
 svn export https://github.com/openwrt/packages/trunk/lang/golang feeds/packages/lang/golang
 #rm -rf feeds/packages/libs/libcap/
@@ -84,6 +84,6 @@ rm -rf feeds/packages/net/kcptun/
 #git clone https://github.com/pymumu/openwrt-smartdns package/lean/openwrt-smartdns
 #git clone -b lede https://github.com/pymumu/luci-app-smartdns package/lean/luci-app-smartdns
 cp $GITHUB_WORKSPACE/comm/target.mk include/
-cp $GITHUB_WORKSPACE/zzz-default-settings package/lean/default-settings/files/zzz-default-settings
-sed -i "s/R8.3.19.0410/XP9.$(date "+%y.%m%d.%H")/g" package/lean/default-settings/files/zzz-default-settings
-sed -i "s/R8.3.19.0410/XP9.$(date "+%y.%m%d.%H")/g" files/etc/banner
+cp $GITHUB_WORKSPACE/zzz-default-settingsmy package/lean/default-settings/files/zzz-default-settings
+sed -i "s/R8.3.19.0410/XM9.$(date "+%y.%m%d.%H")/g" package/lean/default-settings/files/zzz-default-settings
+sed -i "s/R8.3.19.0410/XM9.$(date "+%y.%m%d.%H")/g" files/etc/banner

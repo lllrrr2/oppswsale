@@ -14,7 +14,6 @@ sed -i 's/luci-theme-bootstrap/luci-theme-argon-light-mod/g' feeds/luci/collecti
 sed -i 's/IMG_PREFIX:=$(VERSION_DIST_SANITIZED)/IMG_PREFIX:=XPOS9-Sale-$(shell date +%F-%H)-$(VERSION_DIST_SANITIZED)/g' include/image.mk
 
 svn export https://github.com/lllrrr/myok/trunk/default-settings package/lean/default-settings
-#git clone https://github.com/lllrrr/mysale package/sale
 #svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/ddns-scripts_aliyun package/lean/ddns-scripts_aliyun
 #svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/ddns-scripts_dnspod package/lean/ddns-scripts_dnspod
 #svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/default-settings package/lean/default-settings

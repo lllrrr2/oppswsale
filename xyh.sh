@@ -39,7 +39,6 @@ svn export https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-app-wrtb
 #svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/microsocks package/lean/microsocks
 svn export https://github.com/coolsnowwolf/lede/trunk/package/lean/redsocks2 package/lean/redsocks2
 git clone https://github.com/xiaorouji/openwrt-passwall package/openwrt-passwall
-#git clone https://github.com/lllrrr/myopenwrt-passwall package/openwrt-passwall
 #rm -rf package/openwrt-passwall/luci-app-passwall
 #rm -rf package/openwrt-passwall/naiveproxy
 #git clone https://github.com/lllrrr/mypsw36m package/mypsw36m
@@ -53,7 +52,7 @@ svn export https://github.com/lllrrr/mypsw/trunk/theme package/lean/theme
 rm -rf feeds/packages/lang/golang/
 svn export https://github.com/openwrt/packages/trunk/lang/golang feeds/packages/lang/golang
 #rm -rf feeds/packages/libs/libcap/
-#svn co https://github.com/openwrt/packages/branches/openwrt-19.07/libs/libcap feeds/packages/libs/libcap
+#svn export https://github.com/openwrt/packages/branches/openwrt-19.07/libs/libcap feeds/packages/libs/libcap
 rm -rf feeds/packages/net/haproxy/
 svn export https://github.com/openwrt/packages/trunk/net/haproxy feeds/packages/net/haproxy
 svn export https://github.com/openwrt/openwrt/trunk/package/utils/lua5.3 package/utils/lua5.3
