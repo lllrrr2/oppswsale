@@ -103,8 +103,8 @@ jobs:
     - name: Default FRP Setting
       if: env.FRP_SERVER_ADDR && env.FRP_TOKEN
       run: |
-        sed -i "s/frp.test.test/${{ env.FRP_SERVER_ADDR }}/g" openwrt/files/etc/config/frp
-        sed -i "s/123456789/${{ env.FRP_TOKEN }}/g" openwrt/files/etc/config/frp
+        #sed -i "s/frp.test.test/${{ env.FRP_SERVER_ADDR }}/g" openwrt/files/etc/config/frp
+        #sed -i "s/123456789/${{ env.FRP_TOKEN }}/g" openwrt/files/etc/config/frp
 
     - name: Default IP Setting
       if: github.event.inputs.ip_addr != ''
