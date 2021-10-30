@@ -38,7 +38,7 @@ svn export https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-app-wrtb
 #svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-lib-fs package/lean/luci-lib-fs
 #svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/microsocks package/lean/microsocks
 svn export https://github.com/coolsnowwolf/lede/trunk/package/lean/redsocks2 package/lean/redsocks2
-git clone https://github.com/xiaorouji/openwrt-passwall package/openwrt-passwall
+#git clone https://github.com/xiaorouji/openwrt-passwall package/openwrt-passwall
 #rm -rf package/openwrt-passwall/luci-app-passwall
 #rm -rf package/openwrt-passwall/naiveproxy
 #git clone https://github.com/lllrrr/mypsw36m package/mypsw36m
