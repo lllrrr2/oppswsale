@@ -69,10 +69,11 @@ cp $GITHUB_WORKSPACE/comm/Makefile tools/
 #git clone https://github.com/jerrykuku/lua-maxminddb package/lean/lua-maxminddb
 #git clone https://github.com/garypang13/openwrt-bypass package/lean/openwrt-bypass
 #git clone https://github.com/lllrrr/myopenwrt-bypass package/lean/openwrt-bypass
+git clone https://github.com/lllrrr/myow package/lean/myow
 #sed -i 's/Bypass/旁路/g' package/lean/openwrt-bypass/luci-app-bypass/luasrc/controller/bypass.lua
 git clone https://github.com/lllrrr/myfrpmod package/lean/frpmod
 rm -rf feeds/packages/net/kcptun/
-#git clone https://github.com/lllrrr/mysmartdns package/mysmartdns
+git clone https://github.com/lllrrr/mysmartdns package/mysmartdns
 #git clone https://github.com/pymumu/openwrt-smartdns package/lean/openwrt-smartdns
 #git clone -b lede https://github.com/pymumu/luci-app-smartdns package/lean/luci-app-smartdns
 cp $GITHUB_WORKSPACE/comm/target.mk include/
