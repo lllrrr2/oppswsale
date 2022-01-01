@@ -27,8 +27,8 @@ on:
 #      - master
 #    paths:
 #      - 'new3my.config'
-#  schedule:              #定时触发
-#    - cron: 0 23 * * 1
+  schedule:              #定时触发
+    - cron: 0 0 1,15 * *
   watch:                  #点star触发
     types: started
 
