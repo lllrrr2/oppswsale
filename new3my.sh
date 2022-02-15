@@ -23,7 +23,9 @@ svn export https://github.com/lllrrr/myok/trunk/default-settings package/lean/de
 #svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-app-autoreboot package/lean/luci-app-autoreboot
 #svn export https://github.com/Lienol/openwrt/trunk/package/lean/luci-app-autoreboot package/lean/luci-app-autoreboot
 svn export https://github.com/Lienol/openwrt-package/branches/other/lean/luci-app-autoreboot package/lean/luci-app-autoreboot
-svn export https://github.com/coolsnowwolf/lede/trunk/package/lean/frp package/lean/frp
+#svn export https://github.com/coolsnowwolf/lede/trunk/package/lean/frp package/lean/frp
+svn export https://github.com/coolsnowwolf/packages/trunk/net/frp package/lean/frp
+sed -i 's/..\/..\/lang/$(TOPDIR)\/feeds\/packages\/lang/g' package/lean/frp/Makefile
 #sed -i 's/0.32.1/0.33.0/g' package/lean/frp/Makefile
 #sed -i 's/3a6ef59163f5a1d41b67908269e924000a8ccb2984e4bdfc18bd1405b5dbaf22/9c773ab4bbd208705c795599c5e69302a379734921c90489ed8ae331c24836cb/g' package/lean/frp/Makefile
 svn export https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-app-frpc package/lean/luci-app-frpc
