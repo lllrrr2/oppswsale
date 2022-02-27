@@ -57,6 +57,7 @@ git clone https://github.com/xiaorouji/openwrt-passwall package/openwrt-passwall
 #sed -i 's/PassWall/通行证/g' package/openwrt-passwall/luci-app-passwall/po/zh-cn/passwall.po
 ##git clone https://github.com/Lienol/openwrt-package package/openwrt-package
 svn export https://github.com/lllrrr/mypsw/trunk/theme package/lean/theme
+svn export https://github.com/lllrrr/myok/trunk/luci-app-autoupdate package/lean/luci-app-autoupdate
 #svn co https://github.com/lllrrr/myttyd/trunk/luci-app-terminal package/lean/luci-app-terminal
 #git clone https://github.com/vernesong/OpenClash package/lean/OpenClash
 #git clone https://github.com/destan19/OpenAppFilter package/lean/OpenAppFilter
