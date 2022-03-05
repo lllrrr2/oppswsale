@@ -44,7 +44,7 @@ sed -i 's/..\/..\/luci/$(TOPDIR)\/feeds\/luci\/luci/g' package/lean/luci-app-wrt
 ##svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-lib-fs package/lean/luci-lib-fs
 ##svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/microsocks package/lean/microsocks
 svn export https://github.com/coolsnowwolf/packages/trunk/net/redsocks2 package/lean/redsocks2
-git clone https://github.com/xiaorouji/openwrt-passwall package/openwrt-passwall
+#git clone https://github.com/xiaorouji/openwrt-passwall package/openwrt-passwall
 #rm -rf package/openwrt-passwall/luci-app-passwall
 #rm -rf package/openwrt-passwall/naiveproxy
 #svn co https://github.com/fw876/helloworld/trunk/naiveproxy package/lean/naiveproxy

@@ -51,7 +51,7 @@ sed -i 's/..\/..\/luci/$(TOPDIR)\/feeds\/luci\/luci/g' package/lean/luci-app-wrt
 ##svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-lib-fs package/lean/luci-lib-fs
 ##svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/microsocks package/lean/microsocks
 svn export https://github.com/coolsnowwolf/packages/trunk/net/redsocks2 package/lean/redsocks2
-git clone https://github.com/xiaorouji/openwrt-passwall package/openwrt-passwall
+git clone https://github.com/Mattraks/openwrt-passwall package/openwrt-passwall
 #rm -rf package/openwrt-passwall/luci-app-passwall
 #rm -rf package/openwrt-passwall/naiveproxy
 #svn co https://github.com/fw876/helloworld/trunk/naiveproxy package/lean/naiveproxy
@@ -67,7 +67,7 @@ svn export https://github.com/lllrrr/myok/trunk/luci-app-autoupdate package/lean
 rm -rf feeds/packages/lang/golang/
 svn export https://github.com/openwrt/packages/trunk/lang/golang feeds/packages/lang/golang
 #rm -rf feeds/packages/libs/libcap/
-#svn co https://github.com/openwrt/packages/branches/openwrt-19.07/libs/libcap feeds/packages/libs/libcap
+#svn co https://github.com/openwrt/packages/branches/openwrt-21.02/libs/libcap feeds/packages/libs/libcap
 rm -rf feeds/packages/net/haproxy/
 svn export https://github.com/openwrt/packages/trunk/net/haproxy feeds/packages/net/haproxy
 svn export https://github.com/openwrt/openwrt/trunk/package/utils/lua5.3 package/utils/lua5.3
