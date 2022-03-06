@@ -7,21 +7,11 @@ uci commit luci
 uci set system.@system[0].hostname=Router
 uci set system.@system[0].timezone=CST-8
 uci set system.@system[0].zonename=Asia/Shanghai
-uci set system.@watchcat[0].pingperiod=30m
 uci commit system
 
 uci set network.lan.ipaddr=192.168.123.1
 uci commit network
 
-uci add firewall redirect
-uci set firewall.@redirect[0].target=DNAT
-uci set firewall.@redirect[0].name=Forward63000
-uci set firewall.@redirect[0].proto=tcp
-uci set firewall.@redirect[0].src=wan
-uci set firewall.@redirect[0].src_dport=63000
-uci set firewall.@redirect[0].dest=lan
-uci set firewall.@redirect[0].dest_ip=192.168.123.1
-uci set firewall.@redirect[0].dest_port=80
 uci set firewall.@defaults[0].flow_offloading=1
 uci set firewall.@defaults[0].flow_offloading_hw=1
 uci commit firewall
@@ -59,13 +49,13 @@ sed -i 's/entry({"admin", "status", "syslog"}/-- entry({"admin", "status", "sysl
 sed -i 's/entry({"admin", "status", "dmesg"}/-- entry({"admin", "status", "dmesg"}/g' /usr/lib/lua/luci/controller/admin/status.lua
 sed -i 's/entry({"admin", "status", "processes"}/-- entry({"admin", "status", "processes"}/g' /usr/lib/lua/luci/controller/admin/status.lua
 sed -i 's/entry({"admin", "services", "frp"}/-- entry({"admin", "services", "frp"}/g' /usr/lib/lua/luci/controller/frp.lua
-sed -i 's/entry( {"admin", "services", "ddns"}/-- entry( {"admin", "services", "ddns"}/g' /usr/lib/lua/luci/controller/ddns.lua
-rm -f /usr/lib/lua/luci/view/admin_status/index/ddns.htm
+#sed -i 's/entry( {"admin", "services", "ddns"}/-- entry( {"admin", "services", "ddns"}/g' /usr/lib/lua/luci/controller/ddns.lua
+#rm -f /usr/lib/lua/luci/view/admin_status/index/ddns.htm
 
-/etc/init.d/haproxy disable 2>/dev/null
-/etc/init.d/kcptun disable 2>/dev/null
+#/etc/init.d/haproxy disable 2>/dev/null
+#/etc/init.d/kcptun disable 2>/dev/null
 
-sed -i 's/downloads.openwrt.org/mirrors.tuna.tsinghua.edu.cn\/openwrt/g' /etc/opkg/distfeeds.conf
+#sed -i 's/downloads.openwrt.org/mirrors.tuna.tsinghua.edu.cn\/openwrt/g' /etc/opkg/distfeeds.conf
 
 rm -rf /etc/config/passwall_show
 rm -rf /tmp/luci-*cache
