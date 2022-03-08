@@ -72,7 +72,7 @@ rm -rf feeds/packages/net/haproxy/
 svn export https://github.com/openwrt/packages/trunk/net/haproxy feeds/packages/net/haproxy
 svn export https://github.com/openwrt/openwrt/trunk/package/utils/lua5.3 package/utils/lua5.3
 rm -rf package/network/utils/curl/
-svn export https://github.com/openwrt/packages/trunk/net/curl package/network/utils/curl
+svn export https://github.com/openwrt/packages/branches/openwrt-21.02/net/curl package/network/utils/curl
 #rm -rf feeds/packages/utils/ttyd/
 #svn co https://github.com/openwrt/packages/trunk/utils/ttyd feeds/packages/utils/ttyd
 svn export https://github.com/Lienol/openwrt/branches/19.07/tools/ucl tools/ucl
