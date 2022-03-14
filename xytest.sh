@@ -51,7 +51,9 @@ sed -i 's/..\/..\/luci/$(TOPDIR)\/feeds\/luci\/luci/g' package/lean/luci-app-wrt
 ##svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-lib-fs package/lean/luci-lib-fs
 ##svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/microsocks package/lean/microsocks
 svn export https://github.com/coolsnowwolf/packages/trunk/net/redsocks2 package/lean/redsocks2
-git clone https://github.com/Mattraks/openwrt-passwall package/openwrt-passwall
+#git clone https://github.com/Mattraks/openwrt-passwall package/openwrt-passwall
+git clone --depth 1 https://github.com/xiaorouji/openwrt-passwall package/openwrt-passwall
+git clone -b luci --depth 1 https://github.com/xiaorouji/openwrt-passwall package/openwrt-passwall-luci
 #rm -rf package/openwrt-passwall/luci-app-passwall
 #rm -rf package/openwrt-passwall/naiveproxy
 #svn co https://github.com/fw876/helloworld/trunk/naiveproxy package/lean/naiveproxy
@@ -83,11 +85,11 @@ cp $GITHUB_WORKSPACE/comm/Makefile tools/
 #git clone https://github.com/jerrykuku/lua-maxminddb package/lean/lua-maxminddb
 #git clone https://github.com/garypang13/openwrt-bypass package/lean/openwrt-bypass
 #git clone https://github.com/lllrrr/myopenwrt-bypass package/lean/openwrt-bypass
-git clone https://github.com/lllrrr/myow package/lean/myow
+git clone --depth 1 https://github.com/lllrrr/myow package/lean/myow
 #sed -i 's/Bypass/旁路/g' package/lean/openwrt-bypass/luci-app-bypass/luasrc/controller/bypass.lua
-git clone https://github.com/lllrrr/myfrpmod package/lean/frpmod
+git clone --depth 1 https://github.com/lllrrr/myfrpmod package/lean/frpmod
 rm -rf feeds/packages/net/kcptun/
-git clone https://github.com/lllrrr/mysmartdns package/mysmartdns
+#git clone https://github.com/lllrrr/mysmartdns package/mysmartdns
 #git clone https://github.com/pymumu/openwrt-smartdns package/lean/openwrt-smartdns
 #git clone -b lede https://github.com/pymumu/luci-app-smartdns package/lean/luci-app-smartdns
 cp $GITHUB_WORKSPACE/comm/target.mk include/
