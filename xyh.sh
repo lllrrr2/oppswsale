@@ -75,6 +75,7 @@ cp $GITHUB_WORKSPACE/comm/Makefile tools/
 #git clone https://github.com/garypang13/openwrt-bypass package/lean/openwrt-bypass
 #git clone https://github.com/lllrrr/myopenwrt-bypass package/lean/openwrt-bypass
 git clone https://github.com/lllrrr/myow package/lean/myow
+git clone --depth 1 https://github.com/kiddin9/luci-app-dnsfilter package/lean/luci-app-dnsfilter
 #sed -i 's/Bypass/科学上网/g' package/lean/openwrt-bypass/luci-app-bypass/luasrc/controller/bypass.lua
 git clone https://github.com/lllrrr/myfrpmod package/lean/frpmod
 rm -rf feeds/packages/net/kcptun/
