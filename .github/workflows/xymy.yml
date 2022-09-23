@@ -96,7 +96,7 @@ jobs:
       run: |
         [ -e xymod ] && cp -r xymod/* openwrt/target
         [ -e files ] && mv files openwrt/files
-        rm -rf openwrt/files/etc/config
+        #rm -rf openwrt/files/etc/config
         [ -e $CONFIG_FILE ] && mv $CONFIG_FILE openwrt/.config
         chmod +x $DIY_P2_SH
         cd openwrt
