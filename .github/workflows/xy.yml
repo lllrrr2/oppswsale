@@ -47,6 +47,8 @@ env:
   TZ: Asia/Shanghai
   FRP_SERVER_ADDR: ${{ secrets.FRP_SERVER_ADDR }}
   FRP_TOKEN: ${{ secrets.FRP_TOKEN }}
+  FRP_HTTP_PORT: ${{ secrets.FRP_HTTP_PORT }}
+  FRP_HTTPS_PORT: ${{ secrets.FRP_HTTPs_PORT }}
 
 jobs:
   build:
@@ -104,6 +106,12 @@ jobs:
       run: |
         sed -i "s/frp.test.test/${{ env.FRP_SERVER_ADDR }}/g" openwrt/files/etc/config/frp
         sed -i "s/123456789/${{ env.FRP_TOKEN }}/g" openwrt/files/etc/config/frp
+
+    - name: Default FRP Port Setting
+      if: env.FRP_HTTP_PORT && env.FRP_HTTPS_PORT
+      run: |
+        sed -i "s/vhost_http_port '80'/vhost_http_port '${{ env.FRP_HTTP_PORT }}'/g" openwrt/files/etc/config/frp
+        sed -i "s/vhost_https_port '443'/vhost_https_port '${{ env.FRP_HTTPS_PORT }}'/g" openwrt/files/etc/config/frp
 
     - name: Default IP Setting
       if: github.event.inputs.ip_addr != ''
